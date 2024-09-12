@@ -51,7 +51,14 @@ nav {
     align-items: center;
     /**items will come at center of the box model where it was set up**/
     justify-content: space-between;
+    
 }
+
+nav img {
+    width: 70px; /* Adjust this value */
+    height: 50px; /* Ensures the aspect ratio is maintained */
+}
+
 
 #nav-part2 {
     display: flex;
