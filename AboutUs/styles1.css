@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #1C39BB; 
+    margin-bottom: 40px;
+}
+
+.about-us-section {
+    padding: 50px 20px;
+    background-color: #ffffff; 
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-us-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.fade-in-up.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+}
+
+.slide-in-left.delay-2 {
+    animation-delay: 1s;
+}
+
+.about-us-section {
+    background: linear-gradient(150deg, #39FF14 0%, #1C39BB 100%);
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px #333333;
+}
+
+p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px #333333;
+}
+
+.company-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.company-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
